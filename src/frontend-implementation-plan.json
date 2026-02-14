@@ -1,0 +1,87 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add static Videos gallery section to About page",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "summary": "Create a reusable, responsive, glassmorphism-styled HTML5 video gallery component backed by static public assets.",
+      "acceptanceCriteria": [
+        "A new React component exists for displaying videos (grid/cards) and does not depend on the backend.",
+        "Videos are loaded from static paths (served by the frontend) and play using the native HTML5 <video> element with controls.",
+        "The gallery layout is responsive (1 column on small screens, multiple columns on larger screens) and uses existing glass/neon hover styling patterns.",
+        "Each video has an accessible text label (title/caption or aria-label) and does not rely on autoplay by default."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/portfolio/PortfolioVideoGallery.tsx",
+          "operation": "create",
+          "description": "Add a reusable PortfolioVideoGallery component rendering a responsive grid of cards with native HTML5 <video> (controls enabled, no autoplay) using existing Cyber‑Minimalism glass/neon classes (e.g., glass, border-primary/20, hover:glow-sapphire). Compose shadcn-ui Card (and related subcomponents if helpful) to match the existing UI patterns; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/public/assets/videos/1f158a6b951e1b75afea5d89dc5f91db_1769272394160.mp4",
+          "operation": "create",
+          "description": "Add static video asset for the gallery under the public videos directory so it can be referenced via a static path."
+        },
+        {
+          "path": "frontend/public/assets/videos/1f158a6b951e1b75afea5d89dc5f91db_1769272394160-1.mp4",
+          "operation": "create",
+          "description": "Add static video asset for the gallery under the public videos directory so it can be referenced via a static path."
+        },
+        {
+          "path": "frontend/public/assets/videos/1f158a6b951e1b75afea5d89dc5f91db_1769272394160-2.mp4",
+          "operation": "create",
+          "description": "Add static video asset for the gallery under the public videos directory so it can be referenced via a static path."
+        },
+        {
+          "path": "frontend/public/assets/videos/1f158a6b951e1b75afea5d89dc5f91db_1769272394160-3.mp4",
+          "operation": "create",
+          "description": "Add static video asset for the gallery under the public videos directory so it can be referenced via a static path."
+        },
+        {
+          "path": "frontend/public/assets/videos/b872a184a2fc47ae8ead6c0556390941_1770473082261.mp4",
+          "operation": "create",
+          "description": "Add static video asset for the gallery under the public videos directory so it can be referenced via a static path."
+        },
+        {
+          "path": "frontend/public/assets/videos/b872a184a2fc47ae8ead6c0556390941_1770473082261-1.mp4",
+          "operation": "create",
+          "description": "Add static video asset for the gallery under the public videos directory so it can be referenced via a static path."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Add a new 'Videos' section on the About page beneath MediaPortraits and integrate the video gallery into the page layout.",
+      "acceptanceCriteria": [
+        "The About page (`frontend/src/pages/AboutContactPage.tsx`) displays a new 'Videos' section beneath the portrait images.",
+        "The section heading and any helper text are in English.",
+        "The page remains visually consistent with the current theme and spacing on mobile and desktop."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/AboutContactPage.tsx",
+          "operation": "modify",
+          "description": "Import and render PortfolioVideoGallery below the existing MediaPortraits section, adding an English heading ('Videos') and short descriptive text consistent with current typography and spacing; ensure the section uses the same glass/neon styling patterns used elsewhere (e.g., headings, muted helper text)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "summary": "Make video cards performance-aware with no autoplay, optional posters, and aspect-ratio reserved space to prevent layout shifts.",
+      "acceptanceCriteria": [
+        "No videos autoplay on page load; playback begins only via user interaction.",
+        "Video cards reserve space using a fixed aspect ratio so the grid does not jump when media loads.",
+        "If a poster image is specified for a video entry, it is applied to the <video> element; otherwise a styled fallback placeholder is shown.",
+        "Rendering the video section does not break the existing smooth scroll / route transitions and respects reduced-motion preferences (no forced motion effects)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/portfolio/PortfolioVideoGallery.tsx",
+          "operation": "modify",
+          "description": "Implement performance-focused rendering: disable autoplay; set preload to a conservative mode (e.g., metadata); reserve layout using a fixed aspect-ratio wrapper per card; support optional poster per video entry and show a styled fallback placeholder when missing; avoid motion effects that ignore reduced-motion preferences (limit to existing CSS hover styling patterns rather than forcing animations). Compose shadcn-ui Card where used; verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

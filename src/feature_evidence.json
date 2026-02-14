@@ -1,0 +1,59 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-reusable-portfolio-video-gallery-component-that-renders-a-responsive-grid-of-html5-videos-sourced-from-static-files-under-the-frontend-public-assets-e-g-assets-videos-and-matches-the-existing-cyber-minimalism-glassmorphism-styling",
+      "featureTitle": "Add a reusable portfolio video gallery component that renders a responsive grid of HTML5 videos sourced from static files under the frontend public assets (e.g., `/assets/videos/...`) and matches the existing Cyber‑Minimalism glassmorphism styling.",
+      "files": [
+        "frontend/src/components/portfolio/PortfolioVideoGallery.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-integrate-the-new-video-gallery-into-the-existing-site-ui-by-adding-a-videos-section-on-the-about-page-below-the-existing-mediaportraits-section-with-an-english-section-heading-and-short-descriptive-text-consistent-with-the-current-typography",
+      "featureTitle": "Integrate the new video gallery into the existing site UI by adding a 'Videos' section on the About page (below the existing MediaPortraits section) with an English section heading and short descriptive text consistent with the current typography.",
+      "files": [
+        "frontend/src/pages/AboutContactPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-video-loading-and-playback-are-performance-aware-do-not-autoplay-support-poster-thumbnails-when-provided-and-avoid-layout-shifts-by-reserving-aspect-ratio-space-in-the-ui-cards",
+      "featureTitle": "Ensure video loading and playback are performance-aware: do not autoplay, support poster thumbnails when provided, and avoid layout shifts by reserving aspect-ratio space in the UI cards.",
+      "files": [
+        "frontend/src/components/portfolio/PortfolioVideoGallery.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

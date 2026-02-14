@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Hyper-modern, immersive 3D personal portfolio website for \"Krishna Sunar\" in a Cyber‑Minimalism aesthetic (deep obsidian background with neon sapphire accents), featuring an interactive 3D hero, scrollytelling biography, skills showcase, cinematic transitions, and integration of the user's own images/videos without third-party branding/credits.",
+  "architectural_notes": [
+    "Use a 3D rendering approach (e.g., Three.js/WebGL) for the interactive particle sphere hero and cyber-minimal visual effects.",
+    "Implement scrollytelling/scroll-driven animations for the biography section with glassmorphism blur overlays.",
+    "Adopt a motion system for inertial scrolling, magnetic hover interactions, and cinematic page transitions."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-multi-page-business-website-branded-with-the-name-krishna-sunar-that-showcases-many-product-sectors-including-at-minimum-cars-shoes-pants-belts-bikes-and-bicycles-plus-several-additional-sectors-of-your-choice",
+      "title": "Create a responsive multi-page business website branded with the name “Krishna Sunar” that showcases many product sectors, including (at minimum) Cars, Shoes, Pants, Belts, Bikes, and Bicycles, plus several additional sectors of your choice.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-product-catalog-experience-where-each-product-displays-name-sector-category-price-advantages-and-disadvantages-include-a-product-detail-view-and-a-sector-listing-view-with-basic-search-and-filtering-by-sector",
+      "title": "Implement a product catalog experience where each product displays: name, sector/category, price, advantages, and disadvantages; include a product detail view and a sector listing view with basic search and filtering by sector.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-about-contact-section-page-that-displays-the-owner-details-exactly-as-provided-name-krishna-sunar-email-bkk449433-gmail-com-address-jaimini-2-damek-baglung",
+      "title": "Add an About/Contact section/page that displays the owner details exactly as provided: name “Krishna sunar”, email “bkk449433@gmail.com”, address “jaimini 2 damek baglung”.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-establish-a-coherent-visual-theme-colors-typography-spacing-and-component-styling-appropriate-for-a-modern-business-catalog-site-and-apply-it-consistently-across-all-pages-avoid-using-a-blue-purple-primary-palette",
+      "title": "Establish a coherent visual theme (colors, typography, spacing, and component styling) appropriate for a modern business catalog site and apply it consistently across all pages; avoid using a blue/purple primary palette.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-and-render-generated-static-image-assets-hero-banner-and-logo-stored-under-frontend-public-assets-generated-and-use-them-in-the-homepage-and-header",
+      "title": "Add and render generated static image assets (hero/banner and logo) stored under frontend/public/assets/generated and use them in the homepage and header.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-a-new-static-background-image-asset-and-add-it-under-frontend-public-assets-generated",
+      "title": "Generate a new static background image asset and add it under `frontend/public/assets/generated`.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-the-new-background-image-as-a-site-wide-background-all-routes-pages-ensuring-content-remains-readable-in-both-light-and-dark-modes",
+      "title": "Apply the new background image as a site-wide background (all routes/pages), ensuring content remains readable in both light and dark modes.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-existing-site-ui-into-a-hyper-modern-personal-portfolio-for-krishna-sunar-using-a-cyber-minimalism-aesthetic-deep-obsidian-base-glowing-neon-sapphire-accents-glassmorphism-surfaces-and-consistent-premium-typography-and-spacing-across-all-routes",
+      "title": "Redesign the existing site UI into a hyper-modern personal portfolio for Krishna Sunar using a 'Cyber‑Minimalism' aesthetic: deep obsidian base, glowing neon sapphire accents, glassmorphism surfaces, and consistent premium typography and spacing across all routes.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-homepage-hero-with-an-interactive-3d-hero-a-large-particle-sphere-rendered-with-three-js-react-three-fiber-that-reacts-to-mouse-movement-with-bold-floating-kinetic-typography-reading-krishna-sunar",
+      "title": "Replace the current homepage hero with an interactive 3D hero: a large particle sphere rendered with Three.js (React Three Fiber) that reacts to mouse movement, with bold floating kinetic typography reading 'Krishna Sunar'.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-biography-scrollytelling-section-that-narrates-krishna-sunar-s-journey-from-jaimini-2-damek-baglung-and-education-at-shree-shanti-secondary-school-with-fade-in-text-and-glassmorphism-blur-effects-tied-to-scroll-progress",
+      "title": "Create a Biography 'scrollytelling' section that narrates Krishna Sunar’s journey from 'Jaimini 2, Damek, Baglung' and education at 'Shree Shanti Secondary School', with fade-in text and glassmorphism blur effects tied to scroll progress.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-skills-hub-section-as-an-animated-bento-box-grid-featuring-glowing-icons-marks-and-labels-for-react-js-python-three-js-tailwind-css-and-cloud-architecture",
+      "title": "Implement a 'Skills Hub' section as an animated bento-box grid featuring glowing icons/marks and labels for: React.js, Python, Three.js, Tailwind CSS, and Cloud Architecture.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-site-wide-motion-system-liquid-smooth-inertial-scrolling-feel-magnetic-button-hover-interactions-and-cinematic-page-transitions-between-routes",
+      "title": "Add a site-wide motion system: liquid-smooth inertial scrolling feel, magnetic button hover interactions, and cinematic page transitions between routes.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-the-user-s-uploaded-images-into-the-portfolio-and-remove-any-end-page-attribution-branding-text-referencing-caffeine-ai-or-created-by-caffeine-ai-specifically-use-img-20251129-100401-jpg-and-img-20251129-100401-1-jpg-in-appropriate-portfolio-sections-e-g-portrait-about-media-area-as-static-assets-served-from-the-frontend",
+      "title": "Integrate the user’s uploaded images into the portfolio and remove any end-page attribution/branding text referencing 'caffeine.ai' or 'created by caffeine.ai'. Specifically, use IMG_20251129_100401.jpg and IMG_20251129_100401-1.jpg in appropriate portfolio sections (e.g., portrait/about/media area) as static assets served from the frontend.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-reusable-portfolio-video-gallery-component-that-renders-a-responsive-grid-of-html5-videos-sourced-from-static-files-under-the-frontend-public-assets-e-g-assets-videos-and-matches-the-existing-cyber-minimalism-glassmorphism-styling",
+      "title": "Add a reusable portfolio video gallery component that renders a responsive grid of HTML5 videos sourced from static files under the frontend public assets (e.g., `/assets/videos/...`) and matches the existing Cyber‑Minimalism glassmorphism styling.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-the-new-video-gallery-into-the-existing-site-ui-by-adding-a-videos-section-on-the-about-page-below-the-existing-mediaportraits-section-with-an-english-section-heading-and-short-descriptive-text-consistent-with-the-current-typography",
+      "title": "Integrate the new video gallery into the existing site UI by adding a 'Videos' section on the About page (below the existing MediaPortraits section) with an English section heading and short descriptive text consistent with the current typography.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-video-loading-and-playback-are-performance-aware-do-not-autoplay-support-poster-thumbnails-when-provided-and-avoid-layout-shifts-by-reserving-aspect-ratio-space-in-the-ui-cards",
+      "title": "Ensure video loading and playback are performance-aware: do not autoplay, support poster thumbnails when provided, and avoid layout shifts by reserving aspect-ratio space in the UI cards.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-9",
+      "summary": "Redesign the site into a hyper-modern, immersive 3D personal portfolio for Krishna Sunar with a 'Cyber‑Minimalism' aesthetic (deep obsidian background + glowing neon sapphire accents).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Hero section: implement a massive interactive 3D particle sphere that reacts to mouse movement, with bold floating kinetic typography for 'Krishna Sunar'.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Biography section: build a scrollytelling experience including origin (Jaimini 2, Damek, Baglung) and education (Shree Shanti Secondary School) with fade-in text and glassmorphism blur effects.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Skills Hub: create an animated bento-box grid with glowing icons for React.js, Python, Three.js, Tailwind CSS, and Cloud Architecture.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Site-wide motion system: liquid-smooth inertial scrolling, magnetic button hover effects, and cinematic page transitions.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Media integration: fill the portfolio with the user's uploaded videos and images in appropriate sections/components.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Remove/avoid displaying the footer or end-page attribution text 'created by caffeine.ai' (no third-party branding/credits).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "3d",
+  "projectName": "Krishna Sunar",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

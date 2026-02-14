@@ -1,2 +1,3 @@
-# krishna-sunar
-Exported from Caffeine project: Krishna Sunar
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

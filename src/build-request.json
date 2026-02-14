@@ -1,0 +1,88 @@
+{
+  "kind": "build_request",
+  "title": "Add videos section to the portfolio website",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "text": "Add a reusable portfolio video gallery component that renders a responsive grid of HTML5 videos sourced from static files under the frontend public assets (e.g., `/assets/videos/...`) and matches the existing Cyber‑Minimalism glassmorphism styling.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "Add videos in this website."
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new React component exists for displaying videos (grid/cards) and does not depend on the backend.",
+        "Videos are loaded from static paths (served by the frontend) and play using the native HTML5 <video> element with controls.",
+        "The gallery layout is responsive (1 column on small screens, multiple columns on larger screens) and uses existing glass/neon hover styling patterns.",
+        "Each video has an accessible text label (title/caption or aria-label) and does not rely on autoplay by default."
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Integrate the new video gallery into the existing site UI by adding a 'Videos' section on the About page (below the existing MediaPortraits section) with an English section heading and short descriptive text consistent with the current typography.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "Add videos in this website."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The About page (`frontend/src/pages/AboutContactPage.tsx`) displays a new 'Videos' section beneath the portrait images.",
+        "The section heading and any helper text are in English.",
+        "The page remains visually consistent with the current theme and spacing on mobile and desktop."
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Ensure video loading and playback are performance-aware: do not autoplay, support poster thumbnails when provided, and avoid layout shifts by reserving aspect-ratio space in the UI cards.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "Add videos in this website."
+        ]
+      },
+      "acceptanceCriteria": [
+        "No videos autoplay on page load; playback begins only via user interaction.",
+        "Video cards reserve space using a fixed aspect ratio so the grid does not jump when media loads.",
+        "If a poster image is specified for a video entry, it is applied to the <video> element; otherwise a styled fallback placeholder is shown.",
+        "Rendering the video section does not break the existing smooth scroll / route transitions and respects reduced-motion preferences (no forced motion effects)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under `frontend/src/components/ui` (read-only UI component sources must be composed, not modified).",
+    "Do not modify Internet Identity hooks in immutable paths (`frontend/src/hooks/useInternetIdentity.ts` / `.tsx`, `frontend/src/hooks/useActor.ts`, `frontend/src/main.tsx`).",
+    "Do not introduce third-party video hosting/streaming integrations; serve videos as static frontend assets.",
+    "Keep the backend as a single Motoko actor; no backend changes are required for static video embedding."
+  ],
+  "nonGoals": [
+    "Building a backend video upload system or storing video binaries on the canister.",
+    "Live streaming, DRM, subtitles/transcoding pipeline, or adaptive bitrate streaming (HLS/DASH).",
+    "Real-time video features (chat, reactions, WebSockets)."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}
